@@ -1,6 +1,40 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: flex-start;
+    width:90%;
+    gap:5px;
+}
+
 .todos{
     display: flex;
-    justify-content: space-evenly;
-    width:90%;
-    flex-wrap: wrap;
+    width:45%;
+    flex-direction: column;
+    padding:15px;
+    border-radius: 5px;
+    background-color: rgb(50,195,205);
 }
+.todos__heading{
+    font-size:24px;
+    color:white;
+
+}
+.remove{
+    background-color:tomato;
+}
+@media(max-width:700px){
+    .todos__heading{
+        font-size:32px;
+        color:white;
+    }
+    .todos{
+        width:95%;
+    }
+    .container{
+        width:90%;
+        flex-direction: column;
+        margin:10px auto;
+    }
+}
+
